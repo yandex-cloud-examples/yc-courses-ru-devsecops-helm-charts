@@ -33,5 +33,5 @@
 ```
 ❯ helm search repo yc-courses-ru-devsecops-helm-charts
 NAME                            CHART VERSION   APP VERSION     DESCRIPTION
-kazhem-helm-charts/defectdojo   1.6.45          2.16.1          A Helm chart for Kubernetes to install DefectDojo
+yc-courses-ru-devsecops-helm-charts/defectdojo   1.6.45          2.16.1          A Helm chart for Kubernetes to install DefectDojo
 ```
