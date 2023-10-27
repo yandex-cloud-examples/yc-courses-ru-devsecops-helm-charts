@@ -1,6 +1,11 @@
-# Personal helm charts
+# Материалы для курса «DevSecOps в облачном CI/CD»
 
-## Add repo
+https://practicum.yandex.ru/profile/ycloud-devsecops/subscribe
+
+
+## Personal helm charts
+
+### Add repo
 - To add repo:
     ```
     helm repo add yc-courses-ru-devsecops-helm-charts https://yandex-cloud-examples.github.io/yc-courses-ru-devsecops-helm-charts/
@@ -15,7 +20,7 @@
     ```
 
 
-## Add chart to repo
+### Add chart to repo
 - Generate helm package from chart folder
   ```
   helm package .
@@ -28,8 +33,7 @@
 - Commit changes
 
 
-
-## Current charts
+### Current charts
 ```
 ❯ helm search repo yc-courses-ru-devsecops-helm-charts
 NAME                            CHART VERSION   APP VERSION     DESCRIPTION
