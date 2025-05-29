@@ -2,8 +2,36 @@ apiVersion: v1
 entries:
   defectdojo:
   - apiVersion: v2
+    appVersion: 2.42.1
+    created: "2025-05-29T15:30:32.122492747+06:00"
+    dependencies:
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: ~16.3.0
+    - alias: postgresqlha
+      condition: postgresqlha.enabled
+      name: postgresql-ha
+      repository: https://charts.bitnami.com/bitnami
+      version: ~9.4.0
+    - condition: redis.enabled
+      name: redis
+      repository: https://charts.bitnami.com/bitnami
+      version: ~19.6.0
+    description: A Helm chart for Kubernetes to install DefectDojo
+    digest: 380b293b30f37769b4a60cbb26c5a38da4571fbffb923a61b3fb49e5936ef773
+    icon: https://www.defectdojo.org/img/favicon.ico
+    maintainers:
+    - email: defectdojo-project@owasp.org
+      name: madchap
+      url: https://github.com/DefectDojo/django-DefectDojo
+    name: defectdojo
+    urls:
+    - https://yandex-cloud-examples.github.io/yc-courses-ru-devsecops-helm-charts/defectdojo/defectdojo-1.6.168.tgz
+    version: 1.6.168
+  - apiVersion: v2
     appVersion: 2.16.1
-    created: "2023-03-30T13:50:34.779699+03:00"
+    created: "2025-05-29T15:30:32.137242839+06:00"
     dependencies:
     - condition: mysql.enabled
       name: mysql
@@ -37,4 +65,4 @@ entries:
     urls:
     - https://yandex-cloud-examples.github.io/yc-courses-ru-devsecops-helm-charts/defectdojo/defectdojo-1.6.45-yc.tgz
     version: 1.6.45
-generated: "2023-03-30T13:50:34.754223+03:00"
+generated: "2025-05-29T15:30:32.091997681+06:00"
